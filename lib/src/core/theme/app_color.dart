@@ -6,4 +6,5 @@ class AppColor {
   static Color borderColor = const Color(0xfff1f1f4);
   static Color customBtnColor = const Color(0xff634ecd);
   static Color discountContColour = const Color(0xffe7585b);
+  static Color highLight = const Color(0xffd4d4d4);
 }

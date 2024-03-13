@@ -91,10 +91,8 @@ class _MainScreenState extends State<MainScreen> {
                 SizedBox(
                   height: 20.rH,
                 ),
-                SliderH(sliderModel),
                 Padding(
-                  padding:
-                      const EdgeInsets.only(top: 20, right: 20, bottom: 20),
+                  padding: const EdgeInsets.only(right: 20, bottom: 20),
                   child: Text(
                     "الاقسام",
                     style: GoogleFonts.cairo(
@@ -102,8 +100,9 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                 ),
                 Padding(
-                    padding: const EdgeInsets.only(right: 20),
+                    padding: const EdgeInsets.only(right: 20, bottom: 20),
                     child: ButtonSlider(customBtn)),
+                SliderH(sliderModel),
                 Padding(
                   padding: const EdgeInsets.only(right: 20, top: 30),
                   child: Text(

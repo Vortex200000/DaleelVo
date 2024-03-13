@@ -33,7 +33,7 @@ class _SliderHState extends State<SliderH> {
       width: SizeConfig.screenWidth,
       height: 200.rH,
       child: ListView.builder(
-          physics: BouncingScrollPhysics(),
+          physics: PageScrollPhysics(),
           itemCount: widget.sliderModel.length,
           scrollDirection: Axis.horizontal,
           reverse: true,
@@ -45,15 +45,15 @@ class _SliderHState extends State<SliderH> {
     return listview;
   }
 
-  // void scrollAfter(ScrollController scrollController, int seconds, double max,
-  //     double min, double direction) {
-  //   var scrollDuratioin = Duration(seconds: 10);
-  //   scrollController
-  //       .animateTo(direction, duration: scrollDuratioin, curve: Curves.linear)
-  //       .then((value) {
-  //     direction = direction == max ? min : max;
-  //
-  //     scrollAfter(scrollController, seconds, max, min, direction);
-  //   });
-  // }
+// void scrollAfter(ScrollController scrollController, int seconds, double max,
+//     double min, double direction) {
+//   var scrollDuratioin = Duration(seconds: 10);
+//   scrollController
+//       .animateTo(direction, duration: scrollDuratioin, curve: Curves.linear)
+//       .then((value) {
+//     direction = direction == max ? min : max;
+//
+//     scrollAfter(scrollController, seconds, max, min, direction);
+//   });
+// }
 }

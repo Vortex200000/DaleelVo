@@ -1,7 +1,10 @@
 import 'package:ecommerce_project/exports.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../core/theme/app_color.dart';
+import 'ProductDetails.dart';
 import 'ProductModel.dart';
 
 class ProductCard extends StatelessWidget {
@@ -11,7 +14,7 @@ class ProductCard extends StatelessWidget {
   int index;
   int listLi;
 
-  ProductCard(this.productModel, this.index, this.listLi);
+  ProductCard(this.productModel, this.index, this.listLi, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +22,10 @@ class ProductCard extends StatelessWidget {
       padding: EdgeInsets.only(right: index == listLi - 1 ? 0 : 20),
       child: InkWell(
         borderRadius: BorderRadius.circular(15),
-        onTap: () {},
+        onTap: () {
+          // Routes.productDetails.offPage(arguments: productModel);
+          Get.to(() => ProductDetails(), arguments: productModel);
+        },
         child: Container(
           height: 250.rH,
           width: 170.rW,

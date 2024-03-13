@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../features/presntaions/views/Home/Home.dart';
+import '../../features/presntaions/views/Home/Widgets/ProductDetails.dart';
 import '../../features/presntaions/views/onboarding/onboarding_layout.dart';
 import '../../features/presntaions/views/sign_in/sign_in_layout.dart';
 import '../../features/presntaions/views/splash/splash_screen.dart';
@@ -13,6 +14,7 @@ class AppRouter {
     getPage(Routes.splash, page: () => const SplashScreen()),
     getPage(Routes.onboarding, page: () => const OnboardingLayout()),
     getPage(Routes.signIn, page: () => const SignInLayout()),
+    getPage(Routes.productDetails, page: () => ProductDetails()),
     getPage(
       Routes.homeScreen,
       page: () => const HomeScreen(),
